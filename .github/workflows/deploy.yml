@@ -7,11 +7,11 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-22.04
     steps:
       # 拉取源码
       - name: Checkout source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # 设置 Hugo
       - name: Install Hugo Extended
