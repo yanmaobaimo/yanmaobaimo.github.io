@@ -1,0 +1,32 @@
+name: Deploy Hugo site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 拉取源码
+      - name: Checkout source
+        uses: actions/checkout@v3
+
+      # 设置 Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+
+      # 生成静态文件
+      - name: Build
+        run: hugo --minify
+
+      # 部署到 gh-pages 分支
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: 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
+          publish_dir: ./public
+          publish_branch: gh-pages
