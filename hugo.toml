@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://yanmaobaimo.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = '眼冒白沫'
 theme = "hugo-PaperMod"
 [params]
 	social = true
