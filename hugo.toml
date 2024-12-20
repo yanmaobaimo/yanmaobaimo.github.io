@@ -1,6 +1,40 @@
+# 基本设置
 baseURL = 'https://yanmaobaimo.github.io/'
-languageCode = 'en-us'
+languageCode = 'zh-CN'
 title = '眼冒白沫'
-theme = "hugo-PaperMod"
+theme = 'hugo-PaperMod'
+# 站点参数
 [params]
-	social = true
+  social = true
+  AuthorName = '眼冒白沫'
+  GitHubUser = 'syanmaobaimo'
+  ListOfFoo = ['foo1', 'foo2']
+  SidebarRecentLimit = 10
+  Subtitle = 'sleep'
+  ShowBreadCrumbs = 'true'
+  [params.homeInfoParams]
+    Title = 'Hi there wave'
+    Content = 'Can be Info, links, about...'
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/yanmaobaimo'
+
+  [[params.socialIcons]]
+    name = 'bilibili'
+    url = 'https://space.bilibili.com/105274179?spm_id_from=333.1007.0.0'
+
+# 菜单配置
+[menu]
+  [[menu.main]]
+    name = '首页'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = '关于'
+    url = '/about/'
+    weight = 2
+[permalinks]
+  posts = '/:year/:month/:title/'
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']  # JSON is necessary for search
