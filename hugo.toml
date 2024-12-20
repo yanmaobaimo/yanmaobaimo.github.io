@@ -7,7 +7,7 @@ theme = 'hugo-PaperMod'
 [params]
   social = true
   AuthorName = '眼冒白沫'
-  GitHubUser = 'syanmaobaimo'
+  GitHubUser = 'yanmaobaimo'
   ListOfFoo = ['foo1', 'foo2']
   SidebarRecentLimit = 10
   Subtitle = 'sleep'
