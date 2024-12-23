@@ -42,7 +42,7 @@ icon = "brand-netease-music"
 [[social]]
 identifier = "mail"
 name = "https://yanmaobaimo@gmail.com"
-url = ""
+url = "yanmaobaimo@gmail.com"
 
 [social.params]
 icon = "mail"
